@@ -1,13 +1,16 @@
 require 'rspec'
+require 'rack/test'
+require 'spec_helper'
+require 'sinatra'
 
 puts "Specs are running."
 
 describe 'The main page' do
-  
+  include Rack::Test::Methods
   def app
-    Sinatra::Application.new
+    Sinatra::Application
   end
-  
+
   it "Identifies itself as the AVS signin page" do
     get '/'
     expect(last_response).to be_ok
