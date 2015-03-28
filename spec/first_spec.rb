@@ -1,7 +1,7 @@
 require 'rspec'
 require 'rack/test'
 require 'spec_helper'
-require 'sinatra'
+require_relative '../app.rb'
 
 puts "Specs are running."
 
