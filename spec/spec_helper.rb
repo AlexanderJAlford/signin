@@ -1,7 +1,7 @@
 require 'rspec'
 require 'rack/test'
 include Rack::Test::Methods
-require_relative '../app.rb'
+require './app.rb'
 
 def app
   Sinatra::Application
