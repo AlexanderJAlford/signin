@@ -1,15 +1,8 @@
-require 'rspec'
-require 'rack/test'
 require 'spec_helper'
-require_relative '../app.rb'
 
 puts "Specs are running."
 
 describe 'The main page' do
-  include Rack::Test::Methods
-  def app
-    Sinatra::Application
-  end
 
   it "Identifies itself as the AVS signin page" do
     get '/'
