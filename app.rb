@@ -1,5 +1,6 @@
 require 'sinatra'
+require 'slim'
 
 get '/' do
-  'Alpine Valley School Time and Attendance'
-end 
+  slim :index
+end

@@ -1,5 +1,6 @@
 require 'rspec'
 require 'rack/test'
+require 'slim'
 include Rack::Test::Methods
 require './app.rb'
 

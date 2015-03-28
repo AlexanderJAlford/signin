@@ -4,3 +4,4 @@ gem "rake"
 gem "rspec"
 gem "rack-test", :require => 'rack/test'
 gem "sinatra"
+gem 'slim'
